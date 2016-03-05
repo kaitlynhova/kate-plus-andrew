@@ -1,0 +1,489 @@
+/* CUSTOM BOOTSTRAP */
+/*========================================================================== */
+
+.container{
+  padding: 0 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.set-width {
+    max-width: 1600px;
+    display: block;
+    margin: 0 auto;
+}
+
+.inner-container {
+  border-left: 10px solid #f5f5f5;
+  border-right: 10px solid #f5f5f5;
+}
+
+.std-padding{
+  padding: 100px 0;
+}
+
+/* FONTS */
+/*========================================================================== */
+
+@font-face {
+    font-family: 'denseregular';
+    src: url('../fonts/dense-regular-webfont.eot');
+    src: url('../fonts/dense-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dense-regular-webfont.woff2') format('woff2'),
+         url('../fonts/dense-regular-webfont.woff') format('woff'),
+         url('../fonts/dense-regular-webfont.ttf') format('truetype'),
+         url('../fonts/dense-regular-webfont.svg#denseregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'denseregular';
+}
+
+h2 {
+  font-family: 'denseregular';
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 35px;
+  letter-spacing: 2px;
+  line-height: 35px;
+}
+
+body{
+  color: #6d6d6d;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+/* TOP NAV */
+/*========================================================================== */
+
+#top-nav{
+  background-color: #232833;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  color: white;
+  z-index: 20;
+  font-family: 'denseregular';
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.25);
+}
+
+#top-nav a{
+  color: #fff;
+}
+
+#top-nav .columns {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+
+#top-nav .logo > img{
+  max-width: 230px;
+  position: relative;
+  top: 18px;
+  padding: 0 30px;
+}
+
+#top-nav .mobile-cross{
+  background-color: #8bbeb2;
+  padding: 19px;
+  float: right;
+  position: relative;
+  top: -32px;
+  cursor: pointer;
+}
+
+#top-nav .mobile-cross > img{
+  max-width: 40px;
+}
+
+#top-nav ul{
+  text-align: right;
+  margin: 0;
+}
+
+#top-nav ul li{
+   list-style: none;
+   display: inline-block;
+   padding: 12.5px 30px;
+   font-size: 27px;
+   font-weight: bold;
+   letter-spacing: 2px;
+   transition: .5s;
+}
+#top-nav ul li:hover {
+  background-color: #404756;
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  #top-nav ul li {
+    padding: 15px 15px;
+    font-size: 24px;
+  }
+} /* min-width 641px, medium screens */
+
+#top-nav ul li.wedding{
+  background-color: #8bbeb2;
+}
+
+#top-nav ul li.wedding:hover{
+  background-color: rgba(139,190,178,.7);
+}
+
+/* HERO AREA */
+/*========================================================================== */
+
+#hero{
+  background-image: url("../images/hero.jpg");
+  height: 560px;
+  background-size: cover;
+  background-position: center;
+}
+
+#hero .inner-container{
+  border-top: 10px solid #f5f5f5;
+  margin: 0 50px;
+  height: 445px;
+  position: relative;
+  top: 30px;
+}
+
+#hero h1{
+  color: white;
+  font-size: 6em;
+  letter-spacing: 5px;
+  text-align: center;
+  margin: 0;
+  padding-top: 100px;
+}
+
+#hero p{
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  top: -20px;
+}
+
+
+@media only screen and (min-width: 1200px) {
+  #hero h1{
+    font-size: 9em;
+  }
+}
+
+/* INFORMATION AREA */
+/*========================================================================== */
+
+#information-area a{
+  color: #5a9b8c;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .5s;
+}
+
+/* STORY AREA */
+/*========================================================================== */
+
+#story{
+  background-image: url("../images/story.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+#story .names{
+  position: relative;
+  top: 370px;
+}
+
+/* PARTY AREA */
+/*========================================================================== */
+
+#party {
+  background-image: url("../images/party-bg.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+#party .ladies{
+  background-color: #8bbeb2;
+  color: #fff;
+}
+
+#party .gentlemen{
+  background-color: #5a9b8c;
+  color: #fff;
+}
+
+#party .person{
+  padding-bottom: 20px;
+  padding-top: 20px;
+  height: 125px;
+}
+
+@media only screen and (max-width: 40em) {
+  #party {
+    background-image: none;
+  }
+  #party .inner-container{
+    margin: 0px;
+  }
+  #party .gentlemen{
+    padding: 75px 20px;
+  }
+  #party .ladies{
+    padding:75px 20px;
+  }
+}
+
+/* SCHEDULE AREA */
+/*========================================================================== */
+#schedule{
+  background-color: #e8e8e7;
+}
+
+#schedule .row{
+  border-bottom: 10px solid #e8e8e7;
+  margin: 0 20px;
+}
+
+#schedule .white-bg .row{
+  border-bottom: 0px;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+#schedule h1{
+  font-size: 70px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin: 0;
+  padding-top: 45px;
+}
+
+#schedule .date{
+  position: relative;
+  top: -15px;
+}
+
+#schedule .title{
+  font-size: 40px;
+  font-weight: 200;
+  margin-top: -10px;
+}
+
+#schedule .time{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#schedule .by-invite{
+  padding-bottom: 100px;
+  color: white;
+  background-color: #dda459;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  max-width: 200px;
+  margin-top: 15px;
+}
+
+#schedule .time.light-blue{
+  color: #5b6375;
+}
+
+#schedule .light-blue-bg{
+  background-color: #5b6375;
+  color: white;
+}
+
+#schedule .time.medium-blue{
+  color: #5b6375;
+}
+
+#schedule .medium-blue-bg{
+  background-color: #404756;
+  color: white;
+}
+
+#schedule .time.dark-blue{
+  color: #232833 !important;
+}
+
+#schedule .dark-blue-bg{
+  background-color: #232833;
+  color: white;
+}
+
+#schedule .white-bg{
+  background-color: #fff;
+  color: #6d6d6d;
+  padding: 45px 0;
+}
+
+/* RSVP */
+/*========================================================================== */
+
+#mc_embed_signup{
+  position: relative;
+  z-index: 10;
+}
+#rsvp .registry{
+  margin-top: 35px;
+  margin-bottom: -150px;
+}
+
+.asterisk{
+  color: #DEA653;
+}
+
+#rsvp p{
+  letter-spacing: 1px;
+  margin: 10px 0 5px 0;
+}
+
+#rsvp input {
+  line-height: normal;
+  background: #DFDFDF;
+  border: none;
+  font-size: 24px;
+  padding: 10px 15px;
+  border-radius: 0;
+  width: 100%;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+#rsvp input[type="submit"]{
+  background-color: #DEA653;
+  -webkit-appearance: none ;
+  color: white;
+  border-radius: 0;
+  max-width: 200px;
+  padding: 15px;
+  outline: none;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  transition: .5s;
+}
+
+#rsvp input[type="submit"]:hover{
+  opacity: .7;
+}
+
+#rsvp input[type="checkbox"], input[type="radio"] {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+#rsvp label{
+  position: relative;
+  top: -32px;
+  padding: 0 20px;
+}
+
+#rsvp input[type="checkbox"]:checked {
+  width: 35px;
+  height: 35px;
+  outline: none;
+  background-color: #8bbeb2;
+  -webkit-appearance: none;
+}
+
+#rsvp li{
+  list-style: none;
+}
+
+#registry{
+  padding-top: 150px;
+  position: relative;
+  top: -150px;
+}
+
+.registry img{
+  max-width: 200px;
+  display: block;
+  margin-top: 30px;
+  transition: .5s;
+}
+
+.registry img:hover{
+  opacity: .5;
+}
+
+#rsvp .registry > img{
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 20px;
+  transition: .5s;
+}
+
+#rsvp .registry > img:hover{
+  opacity: .7;
+}
+
+#rsvp .registry img.target{
+  max-width: 100px;
+}
+
+#rsvp .we-are-registered{
+  margin-top: 35px;
+}
+
+/* FOOTER */
+/*========================================================================== */
+
+#footer{
+  background-image: url("../images/footer.jpg");
+  text-align: center;
+  padding-bottom: 50px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+#footer .inner-container{
+  border-bottom: 10px solid #f5f5f5;
+}
+
+#footer img{
+  max-width: 1000px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container{
+    padding: 0;
+  }
+  .inner-container{
+    border: 0px !important;
+  }
+  #hero p{
+    top: 0px;
+  }
+  #hero h1{
+    font-size: 3.5em;
+    padding-top: 250px;
+    line-height: 65px;
+  }
+
+  #schedule .date {
+    position: relative;
+    top: -15px;
+    padding-bottom: 45px;
+  }
+
+  #schedule .row{
+    margin: 0;
+  }
+}
