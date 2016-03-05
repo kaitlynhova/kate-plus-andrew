@@ -84,7 +84,7 @@ body{
 }
 
 #top-nav .logo > img{
-  max-width: 230px;
+  width: 228px;
   position: relative;
   top: 18px;
   padding: 0 30px;
