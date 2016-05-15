@@ -380,7 +380,7 @@ body{
 }
 
 #rsvp input[type="checkbox"], input[type="radio"] {
-  width: 35px;
+  width: 35px !important;
   height: 35px;
   cursor: pointer;
   outline: none;
@@ -393,11 +393,11 @@ body{
   padding: 0 20px;
 }
 
-#rsvp input[type="checkbox"]:checked {
+#rsvp input[type="checkbox"]:checked, input[type="radio"]:checked {
   width: 35px;
   height: 35px;
   outline: none;
-  background-color: #8bbeb2;
+  background-color: #8bbeb2 !important;
   -webkit-appearance: none;
 }
 
